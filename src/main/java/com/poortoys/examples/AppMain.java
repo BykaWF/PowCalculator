@@ -12,8 +12,6 @@ public class AppMain {
     public static void main(String[] args) {
         int n = Runtime.getRuntime().availableProcessors();
         ExecutorService service = null;
-        long start = 0;
-        long end = 0;
         try  {
             service = Executors.newFixedThreadPool(n);
             List<PowTask> powTaskList = new ArrayList<>();
